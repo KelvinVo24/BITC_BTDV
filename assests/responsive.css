@@ -1,0 +1,8 @@
+@media (max-width: 740px){
+    .wrapper{
+        width: 350px;
+        height: 400px;
+        /* color: black; */
+        font-size: 12px;
+    }
+}

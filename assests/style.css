@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/Test/assests/IMG/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.592);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    box-sizing: border-box;
+}
+
+
+.wrapper .form-login{
+    width: 100%;
+    padding: 60px;
+}
+
+.form-login h2{
+    text-align: center;
+    font-size: 35px;
+    /* margin-bottom: 50px; */
+    user-select: none;
+}
+
+.input-box{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    position: relative;
+    margin: 30px 0;
+}
+
+.input-box label{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate(0,-50%);
+    color: #928e8e;
+    transition: 1s;
+    pointer-events: none;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    outline: none;
+    background: transparent;
+    border-radius: 10px;
+    color: white;
+    padding-left: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -15px;
+    color: white;
+}
+
+.remember-me{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 100%; */
+}
+
+.remember-me a{
+    text-decoration: none;
+    color: white;  
+}
+
+.remember-me a:hover{
+    text-decoration: underline;
+}
+
+button{
+    width: 100%;
+    background-color: rgb(127, 230, 244);
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 -15px 30px white inset;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover{
+    background-color: aqua;
+}
+
+.login-register{
+    text-align: center;
+    margin: 25px 0 15px;
+}
+
+.login-register p a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.login-register p a:hover{
+    text-decoration: underline;
+}
+
